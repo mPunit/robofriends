@@ -5,9 +5,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(293deg, rgb(12 91 109) , #1e91a624);
+
 }
+
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex-container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background: lightblue;
+  margin: 8px 8px;
+  border-radius: 10px;
+  width:300px;
+}
+
+.flex-container > div:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 2px
+}
+p {
+  text-decoration: overline;
+  margin: 8px;
+}
+h1 {
+  font-size: 62px;
+  color : teal; 
+  font-family: 'SEGA LOGO FONT';
+  }
+
+input[type="search"] {
+  height: 35px;
+  width: 270px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+.page{
+  text-align:center;
 }
