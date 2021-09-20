@@ -25,9 +25,9 @@ class App extends React.Component {
         const filteredlist = this.state.robots.filter(robot => { return robot.name.toLowerCase().includes(this.state.Searchfield.toLowerCase()) }) 
         return (
             <div className="page">
-                <h1>Robo Friends</h1>,
-                <Searchbox searchchange={this.onSearchChange}/>,
-                <CardList robots={filteredlist}/>,
+                <h1>Robo Friends</h1>
+                <Searchbox searchchange={this.onSearchChange}/>
+                <CardList robots={filteredlist}/>
             </div>
         );
     }
